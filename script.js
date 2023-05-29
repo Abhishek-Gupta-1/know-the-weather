@@ -2,6 +2,8 @@ const express = require("express");
 const https = require("https");
 const bodyParser = require("body-parser");
 const app = express();
+require('dotenv').config();
+
 
 app.use(bodyParser.urlencoded({extended : true}));
 
@@ -12,7 +14,8 @@ app.get("/",function(req,res){
 app.post("/", function(req,res){
 
     let City = req.body.Cname;
-    const url= "https://api.openweathermap.org/data/2.5/weather?q="+City+"&appid=f0e16fba2f05a102350a07cf492de196&units=metric";
+   
+    const url= "https://api.openweathermap.org/data/2.5/weather?q="+City+"&appid="+process.env.API_KEY+"&units=metric";
     
 
     https.get(url, function(response){
@@ -43,6 +46,8 @@ app.post("/", function(req,res){
 
     });
 }); 
+
+
 
 
 app.listen(3000, function(){
