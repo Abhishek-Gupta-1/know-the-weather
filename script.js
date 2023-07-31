@@ -1,7 +1,9 @@
 const express = require("express");
 const https = require("https");
 const bodyParser = require("body-parser");
+
 const app = express();
+const port = 3000;
 require('dotenv').config();
 
 
@@ -46,10 +48,6 @@ app.post("/", function(req,res){
 
     });
 }); 
-
-
-
-
-app.listen(3000, function(){
-    console.log("The server is running at port 3000");
+app.listen(port, function(){
+    console.log(`The Server is running on http://localhost:${port}/`);
 });
