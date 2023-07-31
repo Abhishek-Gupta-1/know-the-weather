@@ -14,3 +14,16 @@ To Use This Website, You have to follow this steps:-
 4)You are ready to go, just type node .\script.js under terminal and then open http://localhost:3000/
 
 5)Enter the City Name and Boom the Temperature and Weather report on your screen :)
+
+Technologies Used :-
+1)HTML
+2)CSS
+3)JavaScript
+#Framework:-
+1)Express.js
+#Others:-
+1)Postman API testing
+2)OpenWeathermap.org API
+3)VS Code
+
+Note: This is a backend Project, so please don't mind the the UI/UX of this Website
