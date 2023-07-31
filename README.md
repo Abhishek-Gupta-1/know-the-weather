@@ -9,7 +9,7 @@ To Use This Website, You have to follow this steps:-
 
 2)Clone this repo in your own system
 
-3)then Paste your API key in const API = ; under script.js file ( line NO. : 20)
+3)then Paste your API key in const API = ; under script.js file ( line No. : 20)
 
 4)You are ready to go, just type node .\script.js under terminal and then open http://localhost:3000/
 
